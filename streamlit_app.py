@@ -57,7 +57,7 @@ def main():
         st.write("No has adquirido el bien, por lo que no obtendrás utilidad directa de él.")
 
     # Explicar resumen de la teoría
-    st.subheader("Resumen de la Teoría")
+    st.subheader("Resumen de la teoría")
     st.write("Según la teoría del valor y la utilidad marginal de la Escuela Austriaca, el valor de un bien se basa en la utilidad subjetiva que tiene para los individuos. Los individuos toman decisiones de consumo basadas en la utilidad marginal, tratando de maximizar su bienestar.")
 
 if __name__ == '__main__':
