@@ -3,7 +3,7 @@ import random
 
 def main():
     st.title("Juego de Valor y Utilidad Marginal")
-    st.write("¡Bienvenido al juego interactivo que combina la teoría del valor y la utilidad marginal según la escuela austriaca de economía!")
+    st.write("¡Bienvenido al juego interactivo que combina la teoría del valor y la utilidad marginal según la Escuela Austriaca de Economía!")
 
     # Definir la lista de bienes
     goods = {
@@ -18,15 +18,15 @@ def main():
     selected_good = st.selectbox("Elige un bien:", list(goods.keys()))
 
     # Mostrar información del bien seleccionado
-    st.subheader("Bien Seleccionado")
+    st.subheader("Bien seleccionado")
     st.write(f"El bien seleccionado es: {selected_good}")
-    st.write(f"Valor de Intercambio: {goods[selected_good]} puntos")
+    st.write(f"Valor de intercambio: {goods[selected_good]} puntos")
 
     # Explicar la teoría del valor
-    st.subheader("Teoría del Valor")
-    st.write("La escuela austriaca de economía sostiene que el valor de un bien no se determina por su costo de producción, sino por la utilidad subjetiva que tiene para los individuos. El valor de un bien es subjetivo y varía de una persona a otra.")
+    st.subheader("Teoría del valor")
+    st.write("La Escuela Austriaca de Economía sostiene que el valor de un bien no se determina por su costo de producción, sino por la utilidad subjetiva que tiene para los individuos. El valor de un bien es subjetivo y varía de una persona a otra.")
 
-    st.subheader("Valor de Uso y Valor de Intercambio")
+    st.subheader("Valor de uso y valor de intercambio")
     st.write("La teoría austriaca distingue entre el valor de uso y el valor de intercambio de un bien. El valor de uso se refiere a la utilidad directa que un individuo obtiene al consumir o utilizar el bien. El valor de intercambio se refiere a la capacidad del bien para intercambiarse por otros bienes en el mercado.")
 
     # Decidir si comprar o no
@@ -41,10 +41,10 @@ def main():
         st.write(f"Has obtenido {utility_gain} puntos de utilidad.")
 
         # Explicar la utilidad marginal
-        st.subheader("Utilidad Marginal")
+        st.subheader("Utilidad marginal")
         st.write("La utilidad marginal se refiere al cambio en la utilidad que obtienes al consumir una unidad adicional de un bien.")
 
-        st.subheader("Ley de la Utilidad Marginal Decreciente")
+        st.subheader("Ley de la utilidad marginal decreciente")
         st.write("Según la ley de la utilidad marginal decreciente, a medida que consumes más de un bien, la utilidad marginal disminuye. Cada unidad adicional proporciona menos utilidad que la unidad anterior.")
 
         additional_units = st.number_input("¿Cuántas unidades adicionales del bien te gustaría consumir?", min_value=0, step=1)
@@ -58,7 +58,7 @@ def main():
 
     # Explicar resumen de la teoría
     st.subheader("Resumen de la Teoría")
-    st.write("Según la teoría del valor y la utilidad marginal de la escuela austriaca, el valor de un bien se basa en la utilidad subjetiva que tiene para los individuos. Los individuos toman decisiones de consumo basadas en la utilidad marginal, tratando de maximizar su bienestar.")
+    st.write("Según la teoría del valor y la utilidad marginal de la Escuela Austriaca, el valor de un bien se basa en la utilidad subjetiva que tiene para los individuos. Los individuos toman decisiones de consumo basadas en la utilidad marginal, tratando de maximizar su bienestar.")
 
 if __name__ == '__main__':
     main()
